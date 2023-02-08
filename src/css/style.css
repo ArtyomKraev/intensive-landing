@@ -1299,6 +1299,11 @@ footer a:hover
     /* footer */
 
 
+    footer 
+    {
+        max-width: 414px;
+    }
+    
     footer #wrapper 
     {
         width: 1440px;
