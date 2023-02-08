@@ -13,7 +13,9 @@
 }
 
 html 
-{ 
+{   
+    -webkit-padding-start: 0;
+
     font-family: Futura;
 
     background-color: #E5E5E5;
@@ -169,7 +171,6 @@ nav a:hover
 
 .who-page
 {
-    width: 1440px;
     max-height: 700px;
 
     background-color: #FFFFFF;
@@ -470,7 +471,7 @@ nav a:hover
     display: flex;
 }
 
-#wrapper
+.programm-page #wrapper
 {
     height: 60px;
 
@@ -478,7 +479,7 @@ nav a:hover
     align-items: center;
 }
 
-#wrapper p
+.programm-page #wrapper p
 {
     font-size: 20px;
     font-weight: bold;
@@ -781,16 +782,29 @@ nav a:hover
 
 footer
 {
-    height: 90px;
+    max-width: 1440px;
+    height: 330px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     font-size: 16px;
     font-weight: bold;
 
     color: #FFFFFF;
     background-color: #251933;
+
+    margin: 0 auto;
+    /* padding: 120px 140px; */
+}
+
+footer #wrapper
+{
+    width: 1440px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
     padding: 120px 140px;
 }
@@ -829,4 +843,478 @@ footer a
 footer a:hover
 {
     text-decoration: underline;
+}
+
+
+
+/* media */
+
+
+
+@media (max-width: 414px)
+{
+    section
+    {
+        max-width: 414px;
+    }
+
+
+    /* 1st page */
+
+
+    .first-page
+    {
+        height: 1095px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-page h1
+    {
+        text-align: center;
+    }
+
+    header
+    {
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    .description
+    {
+        max-width: 270px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin: 0;
+    }
+
+    nav
+    {
+        display: none;
+    }
+
+    #thingy
+    {
+        display: none;
+    }
+
+    .txt-1
+    {
+        max-width: 225px;
+
+        font-size: 16px;
+
+        margin: 30px 0;
+    }
+
+    .txt-2
+    {
+        max-width: 300px;
+
+        font-size: 30px;
+
+        margin: 0;
+    }
+
+    #phrase
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons
+    {
+        width: 414px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #button
+    {
+        max-width: 300px;
+        
+        padding: 20px 90px;
+    }
+
+    #button:first-of-type
+    {
+        margin: 0 0 25px 0; 
+    }
+
+    #face-1
+    {
+        width: 310px;
+
+        margin-right: 0;
+    }
+
+
+    /* 2nd page */
+
+    .who-page
+    {
+        max-height: 1175px;
+
+        padding-top: 85px;
+    }
+
+    .who-page div
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .who-page h2
+    {
+        width: 335px;
+
+        font-size: 30px;
+
+        text-align: center;
+    }
+
+    .if-u .block
+    {
+        width: 215px;
+
+        flex-direction: row;
+
+        margin: 40px 0 0 0;
+        padding: 35px 40px;
+    }
+    
+    .if-u
+    {
+        margin: 0;
+    }
+
+    .who-page .part div
+    {
+        width: 305px;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+    }
+    
+    .txt-3
+    {
+        width: 250px;
+        height: auto;
+
+        text-align: center;
+
+        font-size: 16px;
+
+        margin: 35px 0;
+    }
+
+    .if-u img
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .if-u #img-1 
+    {
+        margin-left: -255px;
+        top: 1258px;
+    }
+
+    .if-u #img-2 
+    {
+        margin-left: 225px;
+        top: 1445px;
+    }
+
+    .if-u #img-3
+    {
+        margin-left: -255px;
+        top: 1630px;
+    }
+
+
+    /* 3rd page */
+
+
+    .third-page
+    {
+        height: 2240px;
+    }
+
+    .third-page h2 
+    {
+        width: 285px;
+
+        text-align: center;
+
+        font-size: 30px;
+       
+        margin: 90px 0 35px 0;
+    }
+
+    #what .blocks
+    {
+        width: 270px;
+
+        flex-direction: column;
+        align-items: center;
+
+        margin: auto auto auto 55px;
+    }
+
+    #what .block
+    {
+        width: 315px;
+        margin: 15px auto;
+
+        font-size: 16px;
+
+        align-items: start;
+    }
+
+    #what .block img 
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .julia
+    {
+        width: 305px;
+
+        flex-direction: column;
+    }
+
+    .julia img 
+    {
+        height: 375px;
+    }
+
+    .txt-4 
+    {
+        max-width: 265px;
+
+        margin: 0 0 20px 0;
+    }
+
+    .txt-4:last-of-type
+    {
+        margin-bottom: 40px;
+    }
+
+    .numbers
+    {
+        width: 305px;
+    }
+
+    .numbers .block 
+    {
+        width: 145px;
+    }
+
+    #number 
+    {
+        font-size: 30px;
+    }
+
+
+    /* 4th page */
+
+    .programm-page h2 
+    {
+        width: 355px;
+
+        font-size: 30px;
+
+        text-align: center;
+
+        margin: 95px 0 45px 0;
+    }
+
+    .programm-page div 
+    {
+        flex-direction: column;
+    }
+
+    .programm-page ul
+    {
+        padding-left: 0;
+    }
+
+    .programm-page ul li 
+    {
+        width: 300px;
+    }
+
+    .programm-page #wrapper 
+    {
+        height: 185px;
+
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .programm-page #wrapper p 
+    {
+        width: 300px;
+    }
+
+    #supervillian 
+    {
+        width: 215px;
+    }
+
+
+    /* 4th page */
+
+    .price-page 
+    {
+        height: 2410px;
+    }
+
+    .price-page h2 
+    {
+        font-size: 30px;
+
+        margin: 90px 0 40px 0;
+    }
+
+    .price-page .blocks 
+    {
+        width: auto;
+        height: 1725px;
+
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .stories 
+    {
+        width: auto;
+
+        flex-direction: column;
+    }
+
+    .stories p:first-of-type 
+    {
+        width: 290px;
+        
+        text-align: center;
+    }
+
+    .stories #button
+    {
+        margin: 25px auto;
+    }
+
+    .price-page .blocks #button:first-of-type 
+    {
+        margin-left: 35px;
+    }
+
+    .price-page .blocks #button 
+    {
+        margin-top: 1070px;
+        margin-left: 35px;
+    }
+
+    .price-page .blocks #button:last-of-type 
+    {
+        margin-top: 1690px;
+        margin-left: 35px;
+    }
+
+    .price-page .blocks #img-2 
+    {
+        margin-top: 570px;
+        margin-left: 255px;
+    }
+
+    .price-page .blocks #img-3 
+    {
+        margin-top: 1195px;
+        margin-left: 255px;
+    }
+
+
+    /* 5th page */
+
+
+    .FAQ-page 
+    {
+        max-height: 1310px;
+    }
+    
+    .FAQ-page h2 
+    {
+        width: 285px;
+
+        text-align: center;
+
+        font-size: 30px;
+       
+        margin: 90px 0 35px 0;
+    }
+    
+    .FAQ-page ul 
+    {
+        padding-left: 0;
+    }
+    
+    .FAQ-page ul li
+    {
+        width: 300px;
+    }
+
+    .FAQ-page div
+    {
+        width: 300px;
+        height: 445px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FAQ-page #wrapper 
+    {
+        width: auto;
+
+        justify-content: auto;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+    /* footer */
+
+
+    footer #wrapper 
+    {
+        width: 1440px;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 60px 85px;
+    }
+
+    footer div
+    {
+        text-align: start;
+        justify-content: space-evenly;
+    }
+
+    footer div:last-of-type
+    {
+        text-align: start;
+    }
 }
