@@ -1143,6 +1143,8 @@ footer a:hover
 
     .programm-page div 
     {
+        width: 414px;
+        
         flex-direction: column;
     }
 
